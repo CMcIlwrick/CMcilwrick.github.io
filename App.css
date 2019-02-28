@@ -1,0 +1,202 @@
+.header-color {
+  background: #c31432; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #240b36,
+    #c31432
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #240b36,
+    #c31432
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.landing-grid {
+  background: #c31432; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #240b36,
+    #c31432
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #240b36,
+    #c31432
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.contact-grid {
+  background: #c31432; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #240b36,
+    #c31432
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #240b36,
+    #c31432
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.projects-grid {
+  display: flex;
+}
+.CV-right-col {
+  background: #27221f;
+  color: white;
+  padding: 2em;
+}
+.avatar-img {
+  height: 350px;
+  padding-top: 5em;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+.banner-text {
+  background-color: black;
+  opacity: 0.5;
+  width: 75%;
+  margin: auto;
+  border-radius: 10px;
+}
+.banner-text h1 {
+  font-size: 66px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+.banner-text hr {
+  border-top: 5px dotted white;
+  width: 50%;
+  margin: auto;
+}
+.banner-text p {
+  color: white;
+  font-size: 30px;
+  padding: 1em;
+  text-align: center;
+}
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: auto;
+}
+.social-links i {
+  color: white;
+  font-size: 5em;
+  padding: 10px;
+}
+/* contacts card filp */
+
+.card-container {
+  perspective: 700;
+  transform-style: preserve-3d;
+}
+
+.cardflip {
+  position: relative;
+  color: #93cbbd;
+  text-align: auto;
+  line-height: 200px;
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  background: #000;
+  width: 600px;
+  height: 400px;
+  transition: all 0.6s ease;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: 0 0.2rem 40rem rgba(black, 0.4);
+  background-image: url();
+}
+/*Speed config*/
+.cardflip:hover {
+  transform: rotateY(180deg);
+  -webkit-transition: -webkit-transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: -webkit-transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -o-transition: transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: transform 1s cubic-bezier(0.4, 0.2, 0.2, 1),
+    -webkit-transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+.front,
+.back {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 600px;
+  height: 400px;
+  backface-visibility: hidden;
+  text-align: left;
+}
+h1 {
+  margin: 0;
+}
+.back {
+  transform: rotatey(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.inner {
+  -webkit-transform: translateY(-50%) translateZ(60px) scale(0.94);
+  transform: translateY(-50%) translateZ(60px) scale(0.94);
+  top: 50%;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 1px solid transparent;
+  -webkit-perspective: inherit;
+  perspective: inherit;
+  z-index: 2;
+  backface-visibility: hidden;
+  font-size: 150%;
+  font-family: Consolas;
+}
+
+.blue {
+  color: #29b6f6;
+}
+
+.green {
+  color: #9ccc65;
+}
+
+.purple {
+  color: #ba68c8;
+}
+
+.cyan {
+  color: #4dd0e1;
+}
+
+.red {
+  color: #ef5350;
+}
+.orange {
+  color: #f57c00;
+}
+.backfont {
+  font-size: 10000000000%;
+}
+
+/* end of content card filp*/
